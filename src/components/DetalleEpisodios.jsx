@@ -21,6 +21,9 @@ const DetalleEpisodios = () => {
   return (
     <div className="contain">
       <Card className="card-body-det-ep" key={episodes.id}>
+      <Button variant="primary" href="/episodios" className="boton">
+            Volver
+          </Button>
         <img className="imagen2" src={imagen} />
         <Card.Body>
           <h1 className="nombre2">
@@ -40,8 +43,9 @@ const DetalleEpisodios = () => {
         </Card.Body>
         <hr />
         <b>Descripcion: </b> {episodes.desc}
-        <Button variant="primary" href="/episodios" className="boton"/ >
-          Volver
+        <Button variant="primary" href="/episodios" className="boton">
+            Volver
+          </Button>
       </Card>
     </div>
   )
